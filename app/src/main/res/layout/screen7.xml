@@ -5,15 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Screen5"
-    android:weightSum="10">
+    android:weightSum="10"
+    tools:context=".Screen7">
+
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_weight="0.5"
-        android:orientation="vertical">
+        android:layout_weight="1.4"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
@@ -23,472 +25,84 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="18dp"
-            android:weightSum="5">
+            android:weightSum="10">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/baseline_arrow_back_24"
+                android:layout_weight="2"
+                android:layout_marginTop="20dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Welcome,"
-                android:textColor="#706F6F"
+                android:text="Search Results"
                 android:textStyle="bold"
-                android:textSize="28dp"
-                android:gravity="bottom"
-                android:layout_weight="3.2"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Daud"
-                android:textColor="#F37B56"
-                android:textStyle="bold"
-                android:paddingLeft="2dp"
-                android:layout_weight="1.8"
-                android:textSize="28dp"
-                android:gravity="bottom"/>
+                android:textSize="24dp"
+                android:textAlignment="textStart"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:layout_weight="8"/>
+
         </LinearLayout>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_weight="9.3"
-        android:orientation="vertical">
-        <ScrollView
+        android:layout_weight="8.6"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Featured Items"
-                    android:textStyle="bold"
-                    android:textSize="24dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="15dp"/>
-
-                <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="175dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="0dp"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="20dp"
-                            android:orientation="vertical"
-                            android:weightSum="2">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1.5"
-                                android:background="@drawable/square_add" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:weightSum="2">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="40dp"
-                                        android:layout_weight="1"
-                                        android:paddingLeft="8dp"
-                                        android:text="Item Name"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="40dp"
-                                        android:layout_weight="1"
-                                        android:gravity="right"
-                                        android:paddingRight="8dp"
-                                        android:text="$10/hr"
-                                        android:textColor="#FF5722"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:orientation="horizontal"
-                                        android:weightSum="2">
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_weight="1.6"
-                                            android:background="@drawable/baseline_location_on_24"
-                                            android:backgroundTint="#8F8F8F" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_weight="0.4"
-                                            android:backgroundTint="#8F8F8F"
-                                            android:text="Islamabad" />
-                                    </LinearLayout>
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="40dp"
-                                        android:layout_weight="1"
-                                        android:gravity="right"
-                                        android:paddingRight="8dp"
-                                        android:text="7th March" />
-                                </LinearLayout>
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="15dp"
-                            android:orientation="vertical"
-                            android:weightSum="2">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1.5"
-                                android:background="@drawable/square_add" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:weightSum="2">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="40dp"
-                                        android:layout_weight="1"
-                                        android:paddingLeft="8dp"
-                                        android:text="Item Name"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="40dp"
-                                        android:layout_weight="1"
-                                        android:gravity="right"
-                                        android:paddingRight="8dp"
-                                        android:text="$10/hr"
-                                        android:textColor="#FF5722"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:orientation="horizontal"
-                                        android:weightSum="2">
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_weight="1.6"
-                                            android:background="@drawable/baseline_location_on_24"
-                                            android:backgroundTint="#8F8F8F" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_weight="0.4"
-                                            android:backgroundTint="#8F8F8F"
-                                            android:text="Islamabad" />
-                                    </LinearLayout>
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="40dp"
-                                        android:layout_weight="1"
-                                        android:gravity="right"
-                                        android:paddingRight="8dp"
-                                        android:text="7th March" />
-                                </LinearLayout>
-                            </LinearLayout>
-
-                        </LinearLayout>
-                    </LinearLayout>
-
-                </HorizontalScrollView>
-
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="15dp"
-               android:weightSum="2">
+                android:weightSum="10">
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Your Item"
-                    android:textStyle="bold"
-                    android:textSize="24dp"
-                    android:layout_weight="1"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="View All"
-                    android:textColor="#FF5722"
-                    android:gravity="right"
-                    android:paddingRight="10dp"
-                    android:textStyle="bold"
-                    android:textSize="24dp"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-
-                <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="175dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="0dp"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="20dp"
-                            android:orientation="vertical"
-                            android:weightSum="2">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1.5"
-                                android:background="@drawable/square_add" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:weightSum="2">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="40dp"
-                                        android:layout_weight="1"
-                                        android:paddingLeft="8dp"
-                                        android:text="Item Name"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="40dp"
-                                        android:layout_weight="1"
-                                        android:gravity="right"
-                                        android:paddingRight="8dp"
-                                        android:text="$10/hr"
-                                        android:textColor="#FF5722"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:orientation="horizontal"
-                                        android:weightSum="2">
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_weight="1.6"
-                                            android:background="@drawable/baseline_visibility_24"
-                                            android:backgroundTint="#8F8F8F" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_weight="0.4"
-                                            android:backgroundTint="#8F8F8F"
-                                            android:text="395" />
-                                    </LinearLayout>
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="40dp"
-                                        android:layout_weight="1"
-                                        android:gravity="right"
-                                        android:paddingRight="8dp"
-                                        android:text="7th March" />
-                                </LinearLayout>
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="15dp"
-                            android:orientation="vertical"
-                            android:weightSum="2">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1.5"
-                                android:background="@drawable/square_add" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:weightSum="2">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="40dp"
-                                        android:layout_weight="1"
-                                        android:paddingLeft="8dp"
-                                        android:text="Item Name"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="40dp"
-                                        android:layout_weight="1"
-                                        android:gravity="right"
-                                        android:paddingRight="8dp"
-                                        android:text="$10/hr"
-                                        android:textColor="#FF5722"
-                                        android:textSize="16dp"
-                                        android:textStyle="bold" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:orientation="horizontal"
-                                        android:weightSum="2">
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_weight="1.6"
-                                            android:background="@drawable/baseline_visibility_24"
-                                            android:backgroundTint="#8F8F8F" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_weight="0.4"
-                                            android:backgroundTint="#8F8F8F"
-                                            android:text="395" />
-                                    </LinearLayout>
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="40dp"
-                                        android:layout_weight="1"
-                                        android:gravity="right"
-                                        android:paddingRight="8dp"
-                                        android:text="7th March" />
-                                </LinearLayout>
-                            </LinearLayout>
-
-                        </LinearLayout>
-                    </LinearLayout>
-
-                </HorizontalScrollView>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:text="Some item"
+                    android:gravity="center_vertical"
+                    android:textSize="24dp"
+                    android:layout_weight="5"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="15dp">
-                    <TextView
-                        android:layout_width="match_parent"
+                    android:background="#2D000000"
+                    android:layout_weight="5"
+                    android:weightSum="10">
+                    <EditText
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Recent Items"
-                        android:textStyle="bold"
-                        android:textSize="24dp" />
-
+                        android:textSize="24dp"
+                        android:paddingLeft="5dp"
+                        android:hint="Enter country"
+                        android:layout_weight="8"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:background="@drawable/baseline_keyboard_arrow_down_24"
+                        android:layout_weight="2"/>
                 </LinearLayout>
 
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="175dp">
@@ -507,7 +121,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/square_add2"
+                                android:background="@drawable/square_add3"
                                 android:layout_weight="1.5"/>
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -525,19 +139,19 @@
                                         android:layout_height="40dp"
                                         android:text="Item Name"
                                         android:textStyle="bold"
-                                        android:textSize="16dp"
+
                                         android:paddingLeft="8dp"
                                         android:layout_weight="1" />
+
                                     <TextView
                                         android:layout_width="match_parent"
-                                        android:layout_height="40dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:paddingRight="8dp"
                                         android:text="$10/hr"
                                         android:textColor="#FF5722"
-                                        android:textStyle="bold"
-                                        android:textSize="16dp"
-                                        android:paddingRight="8dp"
-                                        android:layout_weight="1"
-                                        android:gravity="right"/>
+                                        android:textStyle="bold" />
                                 </LinearLayout>
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -554,13 +168,13 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:background="@drawable/baseline_visibility_24"
+                                            android:background="@drawable/baseline_location_on_24"
                                             android:backgroundTint="#8F8F8F"
                                             android:layout_weight="1.6" />
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:text="395"
+                                            android:text="Islamabad"
                                             android:backgroundTint="#8F8F8F"
                                             android:layout_weight="0.4" />
                                     </LinearLayout>
@@ -585,7 +199,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/square_add2"
+                                android:background="@drawable/square_add3"
                                 android:layout_weight="1.5"/>
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -603,7 +217,6 @@
                                         android:layout_height="40dp"
                                         android:text="Item Name"
                                         android:textStyle="bold"
-                                        android:textSize="16dp"
                                         android:paddingLeft="8dp"
                                         android:layout_weight="1" />
                                     <TextView
@@ -612,7 +225,6 @@
                                         android:text="$10/hr"
                                         android:textColor="#FF5722"
                                         android:textStyle="bold"
-                                        android:textSize="16dp"
                                         android:paddingRight="8dp"
                                         android:layout_weight="1"
                                         android:gravity="right"/>
@@ -632,13 +244,13 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:background="@drawable/baseline_visibility_24"
+                                            android:background="@drawable/baseline_location_on_24"
                                             android:backgroundTint="#8F8F8F"
                                             android:layout_weight="1.6" />
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:text="395"
+                                            android:text="Islamabad"
                                             android:backgroundTint="#8F8F8F"
                                             android:layout_weight="0.4" />
                                     </LinearLayout>
@@ -656,132 +268,333 @@
                     </LinearLayout>
 
                 </HorizontalScrollView>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="25dp">
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginRight="20dp"
+                            android:weightSum="2">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/square_add3"
+                                android:layout_weight="1.5"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2"
+                                    android:layout_weight="1">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:text="Item Name"
+                                        android:textStyle="bold"
+                                        android:paddingLeft="8dp"
+                                        android:layout_weight="1" />
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:text="$10/hr"
+                                        android:textColor="#FF5722"
+                                        android:textStyle="bold"
+                                        android:paddingRight="8dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2"
+                                    android:layout_weight="1">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2"
+                                        android:layout_weight="1">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/baseline_location_on_24"
+                                            android:backgroundTint="#8F8F8F"
+                                            android:layout_weight="1.6" />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Islamabad"
+                                            android:backgroundTint="#8F8F8F"
+                                            android:layout_weight="0.4" />
+                                    </LinearLayout>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:text="7th March"
+                                        android:paddingRight="8dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"/>
+                                </LinearLayout>
+                            </LinearLayout>
 
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginRight="15dp"
+                            android:weightSum="2">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/square_add3"
+                                android:layout_weight="1.5"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2"
+                                    android:layout_weight="1">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:text="Item Name"
+                                        android:textStyle="bold"
+                                        android:paddingLeft="8dp"
+                                        android:layout_weight="1" />
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:text="$10/hr"
+                                        android:textColor="#FF5722"
+                                        android:textStyle="bold"
+                                        android:paddingRight="8dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2"
+                                    android:layout_weight="1">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2"
+                                        android:layout_weight="1">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/baseline_location_on_24"
+                                            android:backgroundTint="#8F8F8F"
+                                            android:layout_weight="1.6" />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Islamabad"
+                                            android:backgroundTint="#8F8F8F"
+                                            android:layout_weight="0.4" />
+                                    </LinearLayout>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:text="7th March"
+                                        android:paddingRight="8dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="25dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginRight="20dp"
+                            android:weightSum="2">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/square_add3"
+                                android:layout_weight="1.5"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2"
+                                    android:layout_weight="1">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:text="Item Name"
+                                        android:textStyle="bold"
+                                        android:paddingLeft="8dp"
+                                        android:layout_weight="1" />
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:text="$10/hr"
+                                        android:textColor="#FF5722"
+                                        android:textStyle="bold"
+                                        android:paddingRight="8dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2"
+                                    android:layout_weight="1">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2"
+                                        android:layout_weight="1">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/baseline_location_on_24"
+                                            android:backgroundTint="#8F8F8F"
+                                            android:layout_weight="1.6" />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Islamabad"
+                                            android:backgroundTint="#8F8F8F"
+                                            android:layout_weight="0.4" />
+                                    </LinearLayout>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:text="7th March"
+                                        android:paddingRight="8dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginRight="15dp"
+                            android:weightSum="2">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/square_add3"
+                                android:layout_weight="1.5"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2"
+                                    android:layout_weight="1">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:text="Item Name"
+                                        android:textStyle="bold"
+                                        android:paddingLeft="8dp"
+                                        android:layout_weight="1" />
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:text="$10/hr"
+                                        android:textColor="#FF5722"
+                                        android:textStyle="bold"
+                                        android:paddingRight="8dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2"
+                                    android:layout_weight="1">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2"
+                                        android:layout_weight="1">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/baseline_location_on_24"
+                                            android:backgroundTint="#8F8F8F"
+                                            android:layout_weight="1.6" />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Islamabad"
+                                            android:backgroundTint="#8F8F8F"
+                                            android:layout_weight="0.4" />
+                                    </LinearLayout>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:text="7th March"
+                                        android:paddingRight="8dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </HorizontalScrollView>
             </LinearLayout>
-
         </ScrollView>
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:orientation="horizontal"
-        android:layout_weight="0"
-        android:gravity="center"
-        android:weightSum="5"
-        android:layout_marginBottom="15dp">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:weightSum="2">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="40dp"
-                android:layout_weight="1"
-                android:backgroundTint="#FF5722"
-                android:background="@drawable/baseline_home_24" />
-            <TextView
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:textSize="12dp"
-                android:gravity="center"
-                android:textColor="#FF5722"
-                android:text="Home"
-                android:layout_weight="1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:weightSum="2">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/baseline_search_24"
-                android:textSize="40dp" />
-
-            <TextView
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Search"
-                android:textSize="12dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_weight="1">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="+"
-                android:textSize="40dp"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:background="@drawable/circle2" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:weightSum="2">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="40dp"
-                android:layout_weight="1"
-                android:background="@drawable/baseline_chat_bubble_outline_24" />
-
-            <TextView
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Chat"
-                android:gravity="center"
-                android:textSize="12dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:weightSum="2">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="40dp"
-                android:layout_weight="1"
-                android:background="@drawable/baseline_person_24" />
-            <TextView
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Person"
-                android:gravity="center"
-                android:textSize="12dp" />
-        </LinearLayout>
-
     </LinearLayout>
 </LinearLayout>
