@@ -8,7 +8,7 @@
     android:layout_marginRight="20dp"
     android:weightSum="10"
     android:orientation="vertical"
-    tools:context=".Screen13">
+    tools:context=".Screen14">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
